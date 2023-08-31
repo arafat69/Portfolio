@@ -10,22 +10,22 @@
   <meta content="portfolio,resume,arafat" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{ asset('public/assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{ asset('public/assets/vendor/aos/aos.css') }}" rel="stylesheet">
-  <link href="{{ asset('public/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('public/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-  <link href="{{ asset('public/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('public/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('public/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="{{asset('public/assets/css/style.css')}}" rel="stylesheet">
+  <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
 
 
 </head>
@@ -251,12 +251,12 @@
           @foreach ($portfolio as $portfolio)
           <div class="col-lg-4 col-md-6 portfolio-item {{ $portfolio->category }}">
             <div class="portfolio-wrap">
-              <img src="{{asset('public/uploads/'.$portfolio->photo)}}" class="img-fluid" alt="">
+              <img src="{{asset('uploads/'.$portfolio->photo)}}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>{{ $portfolio->title }}</h4>
                 <p>{{ $portfolio->category }}</p>
                 <div class="portfolio-links">
-                  <a href="{{asset('public/uploads/'.$portfolio->photo)}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ $portfolio->title }}"><i class="bx bx-plus"></i></a>
+                  <a href="{{asset('uploads/'.$portfolio->photo)}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ $portfolio->title }}"><i class="bx bx-plus"></i></a>
                   <a href="{{ $portfolio->link }}" target="_blank"><i class="bx bx-link"></i></a>
                 </div>
               </div>
@@ -532,17 +532,17 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="{{asset('public/assets/vendor/purecounter/purecounter.js')}}"></script>
-  <script src="{{asset('public/assets/vendor/aos/aos.js')}}"></script>
-  <script src="{{asset('public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{asset('public/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-  <script src="{{asset('public/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-  <script src="{{asset('public/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
-  <script src="{{asset('public/assets/vendor/typed.js/typed.min.js')}}"></script>
-  <script src="{{asset('public/assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
+  <script src="{{asset('assets/vendor/purecounter/purecounter.js')}}"></script>
+  <script src="{{asset('assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/typed.js/typed.min.js')}}"></script>
+  <script src="{{asset('assets/vendor/waypoints/noframework.waypoints.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="{{asset('public/assets/js/main.js')}}"></script>
+  <script src="{{asset('assets/js/main.js')}}"></script>
 
 </body>
 
